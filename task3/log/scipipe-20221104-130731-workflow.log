@@ -1,0 +1,5 @@
+AUDIT   2022/11/04 13:07:31 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-130731-workflow.log)
+AUDIT   2022/11/04 13:07:31 [Task:index] Executing: minimap2 -d ref.mmi ./input/ref_e_coli.fna.gz
+ERROR   2022/11/04 13:07:31 [Task:index] Existing temp folders found, so existing. Clean up temporary folders (starting with _scipipe_tmp) before restarting the workflow!
+
+

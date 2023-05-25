@@ -1,0 +1,13 @@
+AUDIT   2022/11/04 14:54:35 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-145435-workflow.log)
+AUDIT   2022/11/04 14:54:35 [Task:index] Executing: minimap2 -d output/ref.mmi ../input/ref_e_coli.fna.gz
+AUDIT   2022/11/04 14:54:35 [Task:fastqc] Executing: fastqc ../input/e_coli_fastq.gz -o output -d output/temp
+ERROR   2022/11/04 14:54:35 [Task:fastqc] Command failed!
+Command:
+fastqc ../input/e_coli_fastq.gz -o output -d output/temp
+
+Output:
+Specified output directory 'output' does not exist
+
+Original error:exit status 2
+
+

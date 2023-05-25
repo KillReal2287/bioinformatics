@@ -1,0 +1,10 @@
+AUDIT   2022/11/04 15:01:24 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-150124-workflow.log)
+AUDIT   2022/11/04 15:01:24 [Task:fastqc] Executing: fastqc ../input/e_coli_fastq.gz
+AUDIT   2022/11/04 15:01:24 [Task:index] Output file already exists, so skipping: output/ref.mmi
+AUDIT   2022/11/04 15:01:24 [Task:alignment] Output file already exists, so skipping: output/alignment.sam
+AUDIT   2022/11/04 15:01:24 [Task:samtools] Output file already exists, so skipping: output/result.txt
+AUDIT   2022/11/04 15:01:24 [Task:parse] Output file already exists, so skipping: output/parsed.txt
+AUDIT   2022/11/04 15:01:24 [Task:view] Executing: echo ../output/parsed.txt > parsed.txt.view.out
+AUDIT   2022/11/04 15:01:24 [Task:view] Finished: echo ../output/parsed.txt > parsed.txt.view.out
+AUDIT   2022/11/04 15:01:26 [Task:fastqc] Finished: fastqc ../input/e_coli_fastq.gz
+AUDIT   2022/11/04 15:01:26 [Workflow:workflow] Finished workflow (Log written to log/scipipe-20221104-150124-workflow.log)

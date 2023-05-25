@@ -1,0 +1,26 @@
+AUDIT   2022/11/04 14:46:14 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-144614-workflow.log)
+AUDIT   2022/11/04 14:46:14 [Task:index] Executing: minimap2 -d output/ref.mmi ../input/ref_e_coli.fna.gz
+AUDIT   2022/11/04 14:46:14 [Task:index] Finished: minimap2 -d output/ref.mmi ../input/ref_e_coli.fna.gz
+AUDIT   2022/11/04 14:46:14 [Task:alignment] Executing: minimap2 -a ../output/ref.mmi ../input/e_coli_fastq.gz > output/alignment.sam
+AUDIT   2022/11/04 14:46:14 [Task:alignment] Finished: minimap2 -a ../output/ref.mmi ../input/e_coli_fastq.gz > output/alignment.sam
+AUDIT   2022/11/04 14:46:14 [Task:convert] Executing: samtools view -O BAM ../output/alignment.sam > output/viewresult.bam
+AUDIT   2022/11/04 14:46:14 [Task:samtools] Executing: samtools flagstat ../output/alignment.sam > output/result.txt
+AUDIT   2022/11/04 14:46:14 [Task:samtools] Finished: samtools flagstat ../output/alignment.sam > output/result.txt
+AUDIT   2022/11/04 14:46:14 [Task:parse] Executing: python3 ../input/parser.py ../output/result.txt > output/parsed.txt
+AUDIT   2022/11/04 14:46:14 [Task:parse] Finished: python3 ../input/parser.py ../output/result.txt > output/parsed.txt
+AUDIT   2022/11/04 14:46:14 [Task:convert] Finished: samtools view -O BAM ../output/alignment.sam > output/viewresult.bam
+AUDIT   2022/11/04 14:46:14 [Task:sort] Executing: samtools sort ../output/viewresult.bam > output/sorted.bam
+AUDIT   2022/11/04 14:46:15 [Task:sort] Finished: samtools sort ../output/viewresult.bam > output/sorted.bam
+AUDIT   2022/11/04 14:46:15 [Task:freebayes] Executing: freebayes -f ../input/ref_e_coli.fna.gz ../output/sorted.bam > output/sample.vcf
+ERROR   2022/11/04 14:46:15 [Task:freebayes] Command failed!
+Command:
+freebayes -f ../input/ref_e_coli.fna.gz ../output/sorted.bam > output/sample.vcf
+
+Output:
+index file ../input/ref_e_coli.fna.gz.fai not found, generating...
+ERROR: mismatched line lengths at line 3 within sequence 
+File not suitable for fasta index generation.
+
+Original error:exit status 1
+
+

@@ -1,0 +1,13 @@
+AUDIT   2022/11/04 13:24:20 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-132420-workflow.log)
+AUDIT   2022/11/04 13:24:20 [Task:index] Output file already exists, so skipping: ref.mmi
+AUDIT   2022/11/04 13:24:20 [Task:alignment] Executing: minimap2 -a ref.mmi ./input/e_coli_fastq.gz > ./output/alignment.sam
+ERROR   2022/11/04 13:24:20 [Task:alignment] Command failed!
+Command:
+minimap2 -a ref.mmi ./input/e_coli_fastq.gz > ./output/alignment.sam
+
+Output:
+[ERROR] failed to open file 'ref.mmi'
+
+Original error:exit status 1
+
+

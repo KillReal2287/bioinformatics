@@ -1,0 +1,2 @@
+ERROR   2022/11/04 16:24:58 Could not execute command `dot -Tpdf my_workflow_graph.dot -o my_workflow_graph.dot.pdf`: bash: dot: command not found
+

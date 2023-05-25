@@ -1,0 +1,20 @@
+AUDIT   2022/11/04 14:09:41 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-140941-workflow.log)
+AUDIT   2022/11/04 14:09:41 [Task:index] Output file already exists, so skipping: ref.mmi
+AUDIT   2022/11/04 14:09:41 [Task:alignment] Output file already exists, so skipping: output/alignment.sam
+AUDIT   2022/11/04 14:09:41 [Task:samtools] Output file already exists, so skipping: output/result.txt
+AUDIT   2022/11/04 14:09:41 [Task:parse] Executing: python3 ../input/parser.py ../output/result.txt > output/parsed.txt
+ERROR   2022/11/04 14:09:41 [Task:parse] Command failed!
+Command:
+python3 ../input/parser.py ../output/result.txt > output/parsed.txt
+
+Output:
+Traceback (most recent call last):
+  File "../input/parser.py", line 21, in <module>
+    parse(f)
+  File "../input/parser.py", line 12, in parse
+    if float(result) > 90.0:
+ValueError: could not convert string to float: 'N/'
+
+Original error:exit status 1
+
+

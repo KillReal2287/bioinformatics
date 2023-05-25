@@ -1,0 +1,13 @@
+AUDIT   2022/11/04 13:13:45 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-131345-workflow.log)
+AUDIT   2022/11/04 13:13:45 [Task:fastqc] Executing: fastqc ./input/e_coli_fastq.gz -o ./outdir
+AUDIT   2022/11/04 13:13:45 [Task:index] Output file already exists, so skipping: ref.mmi
+ERROR   2022/11/04 13:13:45 [Task:fastqc] Command failed!
+Command:
+fastqc ./input/e_coli_fastq.gz -o ./outdir
+
+Output:
+Specified output directory './outdir' does not exist
+
+Original error:exit status 2
+
+

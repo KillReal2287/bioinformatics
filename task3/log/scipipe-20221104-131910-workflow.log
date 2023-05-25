@@ -1,0 +1,14 @@
+AUDIT   2022/11/04 13:19:10 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-131910-workflow.log)
+AUDIT   2022/11/04 13:19:10 [Task:index] Output file already exists, so skipping: ref.mmi
+AUDIT   2022/11/04 13:19:10 [Task:fastqc] Executing: fastqc ./input/e_coli_fastq.gz | rm e_coli_fastq_fastqc.zip > ./output/e_coli_fastq_fastqc.html
+ERROR   2022/11/04 13:19:10 [Task:fastqc] Command failed!
+Command:
+fastqc ./input/e_coli_fastq.gz | rm e_coli_fastq_fastqc.zip > ./output/e_coli_fastq_fastqc.html
+
+Output:
+rm: cannot remove 'e_coli_fastq_fastqc.zip': No such file or directory
+Skipping './input/e_coli_fastq.gz' which didn't exist, or couldn't be read
+
+Original error:exit status 1
+
+

@@ -1,0 +1,10 @@
+AUDIT   2022/11/04 14:22:33 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-142233-workflow.log)
+AUDIT   2022/11/04 14:22:33 [Task:index] Executing: minimap2 -d output/ref.mmi ../input/ref_e_coli.fna.gz
+AUDIT   2022/11/04 14:22:33 [Task:index] Finished: minimap2 -d output/ref.mmi ../input/ref_e_coli.fna.gz
+AUDIT   2022/11/04 14:22:33 [Task:alignment] Executing: minimap2 -a ../output/ref.mmi ../input/e_coli_fastq.gz > output/alignment.sam
+AUDIT   2022/11/04 14:22:33 [Task:alignment] Finished: minimap2 -a ../output/ref.mmi ../input/e_coli_fastq.gz > output/alignment.sam
+AUDIT   2022/11/04 14:22:33 [Task:samtools] Executing: samtools flagstat ../output/alignment.sam > output/result.txt
+AUDIT   2022/11/04 14:22:33 [Task:samtools] Finished: samtools flagstat ../output/alignment.sam > output/result.txt
+AUDIT   2022/11/04 14:22:33 [Task:parse] Executing: python3 ../input/parser.py ../output/result.txt > output/parsed.txt
+AUDIT   2022/11/04 14:22:33 [Task:parse] Finished: python3 ../input/parser.py ../output/result.txt > output/parsed.txt
+AUDIT   2022/11/04 14:22:33 [Workflow:workflow] Finished workflow (Log written to log/scipipe-20221104-142233-workflow.log)

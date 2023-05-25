@@ -1,0 +1,4 @@
+AUDIT   2022/11/04 13:17:36 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-131736-workflow.log)
+AUDIT   2022/11/04 13:17:36 [Task:index] Output file already exists, so skipping: ref.mmi
+AUDIT   2022/11/04 13:17:36 [Task:fastqc] Output file already exists, so skipping: ./output/
+AUDIT   2022/11/04 13:17:36 [Workflow:workflow] Finished workflow (Log written to log/scipipe-20221104-131736-workflow.log)

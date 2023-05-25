@@ -1,0 +1,37 @@
+Отчет
+1) Ген, который я использовал для анализа: https://www.ncbi.nlm.nih.gov/assembly/GCF_000005845.2/
+2) Cкрипт, который называется script.sh запускает все необходимые инструменты и с помощью них проводит непосредственно анализ вышеупомянутого гена.
+3) Результаты запуска вышеупомянутого скрипта можно наблюдать ниже:
+14228 + 0 in total (QC-passed reads + QC-failed reads)
+13455 + 0 primary
+1277 + 0 secondary
+756 + 0 supplementary
+0 + 0 duplicates
+0 + 0 primary duplicates
+14082 + 0 mapped (95.29% : N/A)
+12380 + 0 primary mapped (94.64% : N/A)
+0 + 0 paired in sequencing
+0 + 0 read1
+0 + 0 read2
+0 + 0 properly paired (N/A : N/A)
+0 + 0 with itself and mate mapped
+0 + 0 singletons (N/A : N/A)
+0 + 0 with mate mapped to a different chr
+0 + 0 with mate mapped to a different chr (mapQ>=5)
+
+4) Реализация hello world осуществляется с помощью скрипта helloWorld.go
+Для этого необходимо сгенерировать scipipe на helloWorld:
+scipipe new hello_world.go
+После этого необходимо запустить сам скрипт 
+go run hello_world.go
+
+5) Просмотр генерированных файлов scipipe:
+ls -1 hello*
+6) Для вывода используется:
+cat hello.out.txt.world.out.txt
+
+7) Для запуска pipeline выполнить следующую команду:
+go run pipeline.go
+
+Все результаты кладутся в output вида "Ok" and "not OK"
+

@@ -1,0 +1,7 @@
+AUDIT   2022/11/04 13:29:35 [Workflow:workflow] Starting workflow (Writing log to log/scipipe-20221104-132935-workflow.log)
+AUDIT   2022/11/04 13:29:35 [Task:index] Output file already exists, so skipping: ref.mmi
+AUDIT   2022/11/04 13:29:35 [Task:alignment] Output file already exists, so skipping: ./output/alignment.sam
+AUDIT   2022/11/04 13:29:35 [Task:samtools] Output file already exists, so skipping: ./output/result.txt
+ERROR   2022/11/04 13:29:35 [Task:parse] Existing temp folders found, so existing. Clean up temporary folders (starting with _scipipe_tmp) before restarting the workflow!
+
+

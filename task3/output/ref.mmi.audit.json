@@ -1,0 +1,27 @@
+{
+    "ID": "y9kv9s05vq6ajf2r4uua",
+    "ProcessName": "index",
+    "Command": "minimap2 -d output/ref.mmi ../input/ref_e_coli.fna.gz",
+    "Params": {},
+    "Tags": {},
+    "StartTime": "2022-11-04T14:56:09.7533135+07:00",
+    "FinishTime": "2022-11-04T14:56:09.9783133+07:00",
+    "ExecTimeNS": 224999800,
+    "OutFiles": {
+        "ref": "output/ref.mmi"
+    },
+    "Upstream": {
+        "input/ref_e_coli.fna.gz": {
+            "ID": "vvrz0wtbu8em3qaze937",
+            "ProcessName": "",
+            "Command": "",
+            "Params": {},
+            "Tags": {},
+            "StartTime": "0001-01-01T00:00:00Z",
+            "FinishTime": "0001-01-01T00:00:00Z",
+            "ExecTimeNS": -1,
+            "OutFiles": {},
+            "Upstream": {}
+        }
+    }
+}
