@@ -1,0 +1,56 @@
+  ####################################################
+
+    Running VMD to define selections for protein A
+    Running VMD to define selections for protein B
+
+  ####################################################
+
+  #######################################################################
+
+                           PROGRAM: LOVOALIGN
+                   Low Order Value Optimization Methods
+                          for Protein Alignment
+                              Version 16.342
+
+  #######################################################################
+  Problem specifications:
+  -----------------------------------------------------------------------
+  Protein A: lovoalignvmd.A
+  Protein B: lovoalignvmd.B
+  Number of atoms: A:         100  B:         100
+  Will maximize the TM-SCORE
+  Penalization for gaps:    0.0000000000000000
+  Maximum number of iterations:        10000
+  Using internal-distance initial point.
+  GDT Threshold:    4.0000000000000000
+  -----------------------------------------------------------------------
+  TRIAL:       1 SCORE:      0.63419 COVERAGE:     90 GAPS:     12 GLOB: 1
+  TRIAL:       4 SCORE:      0.63421 COVERAGE:     90 GAPS:     12 GLOB: 1
+  Repeated best solution found     3 times at trial    14
+
+  ------------------------- SEQUENCE ALIGNMENT --------------------------
+            .         .         .         .         .
+          1 MSTLTSVSGFP-R--IGQNRELKKIIEGYWKGANDLAAVKATAAELRAKH    47
+          1 --MSTLT-SVSGFPRIGQNRELKKIIEGYWKGANDLAAVKATAAELRAKH    47
+            .         .         .         .         .
+         48 WRLQQAAGIDLIASNDFSYYDQ-MLDTAILL----NVI--PQRYQRLAFD    90
+         48 WRLQQAA-GIDLIA-SND--FSYYDQMLDTAILLNVIPQRYQRL-AFDD-    91
+            .         .         .         .         .
+         91 DQEDTLFAMA                                           100
+         92 QEDT-LFAMA                                           100
+
+  -----------------------------------------------------------------------
+  FINAL SCORE:     0.634206  COVERAGE:    90  RMSD:   4.848650  GAPS:  12
+  Final score normalized by smallest protein:     0.634206
+  -----------------------------------------------------------------------
+  ATOMS CLOSER THAN   3.0000 Ang: RMSD:   1.414942 COVERAGE:     64
+  GDT_TS SCORE:   57.750          GDT_HA SCORE:   40.500
+  -----------------------------------------------------------------------
+  Time used in this alignment:   3.06260008E-02
+  -----------------------------------------------------------------------
+  END OF ALIGNMENT
+  -----------------------------------------------------------------------
+  Wrote file: ../../lovoalign/align/files/TEMP257985422507853/selected_prediction.aligned_to.test_3b0d9.pdb
+  -----------------------------------------------------------------------
+  TOTAL RUNNING TIME:    8.15689936E-02
+  -----------------------------------------------------------------------
